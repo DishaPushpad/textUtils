@@ -73,7 +73,7 @@ setTimeout(() => {
      <Routes> 
         <Route  path="/about" element={<About/>}/> 
         
-       <Route path="/textutils"
+       <Route path="/textUtils"
           element={  
           <TextForm showAlert={showAlert} heading="enter text"  mode={mode}/> 
        

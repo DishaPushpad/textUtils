@@ -8,15 +8,15 @@ export default function Navbar(props) {
     <nav
       className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
     >
-      <div className="container-fluid">
-        {/* <Link className="navbar-brand" to="/">
+    <div className="container-fluid">
+          {/* <Link className="navbar-brand" to="/title">
           {props.title}
-        </Link>
+        </Link> */}
      
-         */}
-         <a className="navbar-brand" href="#">
+        
+         {/* <a className="navbar-brand" href="#">
           {props.title}
-        </a>
+        </a> */}
         <button
           className="navbar-toggler"
           type="button"

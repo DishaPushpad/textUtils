@@ -66,7 +66,7 @@ setTimeout(() => {
 
 
      <BrowserRouter> 
-       <Navbar title="welcome" mode={mode} toggleMode={toggleMode} /> 
+       <Navbar mode={mode} toggleMode={toggleMode} /> 
 
   <Alert alert={alert} />
       <div className="container my-3">

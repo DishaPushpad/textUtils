@@ -50,7 +50,7 @@ export default function About(props) {
           <div
             id="collapseOne"
             className="accordion-collapse collapse show"
-            style={{color: props.mode === "dark" ? "black" : "white"}}
+           // style={{color: props.mode === "dark" ? "black" : "white"}}
         //  color: props.mode === "dark" ? "black" : "white"}}
             aria-labelledby="headingOne"
             data-bs-parent="#accordionExample"

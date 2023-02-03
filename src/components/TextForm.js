@@ -41,8 +41,8 @@ const [count, setcount] = useState(0)
     <>
       <div
         className="container"
-        // style={{ color: props.mode === "dark" ? "white" : "black" }}
-        style={{ color: props.nmode === "blue" ? "white" : "black" }}
+        style={{ color: props.mode === "dark" ? "white" : "black" }}
+        // style={{ color: props.nmode === "blue" ? "white" : "black" }}
       >
         <h2>{props.heading}</h2>
         <div className="mb-3">
@@ -51,11 +51,11 @@ const [count, setcount] = useState(0)
             value={text}
             onChange={handleonChange}
             style={{
-              // backgroundColor: props.mode === "dark" ? "#343a40" : "white",
-              // color: props.mode === "dark" ? "white" : "black"
+              backgroundColor: props.mode === "dark" ? "#343a40" : "white",
+              color: props.mode === "dark" ? "white" : "black"
 
-              backgroundColor: props.nmode === "blue" ? "#9cb3fb" : "white",
-              color: props.nmode === "blue" ? "white" : "blue"
+              // backgroundColor: props.nmode === "blue" ? "#9cb3fb" : "white",
+              // color: props.nmode === "blue" ? "white" : "blue"
 
             }}
             id="myBox"
@@ -77,8 +77,8 @@ const [count, setcount] = useState(0)
       </div>
       <div
         // className="container my-2"
-        // style={{ color: props.mode === "dark" ? "white" : "black" }}
-        style={{ color: props.nmode === "blue" ? "white" : "black" }}
+        style={{ color: props.mode === "dark" ? "white" : "black" }}
+        // style={{ color: props.nmode === "blue" ? "white" : "black" }}              
       >
         <h1>your text summary</h1>
         <p>

@@ -1,17 +1,17 @@
 // import logo from './logo.svg';
 import React, { useState } from "react";
 import "./App.css";
-// import About from "./components/About";
+import About from "./components/About";
 import Alert from "./components/Alert";
 
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
-// import {
-//   BrowserRouter,
-// Routes,
-//   Route
+import {
+  BrowserRouter,
+Routes,
+  Route
   
-// } from "react-router-dom";
+} from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -65,26 +65,30 @@ setTimeout(() => {
     <>
 
 
-    {/* <BrowserRouter> */}
+     <BrowserRouter> 
        <Navbar title="welcome" mode={mode} toggleMode={toggleMode} /> 
 
   <Alert alert={alert} />
       <div className="container my-3">
-      {/* <Routes> */}
-          {/* <Route exact path="/about" element={<About/>}/> */}
-          
-          {/* <Route exact path="/" */}
-          {/* element={  */}
-          <TextForm showAlert={showAlert} heading="enter text"  mode={mode}/>
-          {/* <About/> */}
-          {/* }>  */}
-          {/* </Route> */}
-        {/* </Routes> */}
+     <Routes> 
+        <Route  path="/about" element={<About/>}/> 
+        
+       <Route path="/Home"
+          element={  
+          <TextForm showAlert={showAlert} heading="enter text"  mode={mode}/> 
+       
+          }/> 
+      
+       
+       </Routes>
 
-        {/* <div className="container my-4" />  */}
-      {/* <About mode={mode}  toggleMode={toggleMode} />  */}
-      {/* </BrowserRouter> */}
+     {/* <div className="container my-4" /> 
+     <About mode={mode}  toggleMode={toggleMode} />   */}
+   
+     
+
       </div>
+      </BrowserRouter> 
     </>
   );
 }

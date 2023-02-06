@@ -14,9 +14,9 @@ export default function Navbar(props) {
         </Link> */}
      
         
-         {/* <a className="navbar-brand" href="#">
+         <a className="navbar-brand" href="#">
           {props.title}
-        </a> */}
+        </a>
         <button
           className="navbar-toggler"
           type="button"

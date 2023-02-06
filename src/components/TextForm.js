@@ -62,16 +62,16 @@ const [count, setcount] = useState(0)
             rows="7"
           ></textarea>
         </div>
-        <button className="btn btn-primary mx-2" onClick={handleupclick}>
+        <button className="btn btn-primary mx-2 my-1" onClick={handleupclick}>
           Convert to Uppercase
         </button>
-        <button className="btn btn-primary mx-2" onClick={handletoclick}>
+        <button className="btn btn-primary mx-2 my-1" onClick={handletoclick}>
           Convert to lowercase
         </button>
-        <button className="btn btn-primary mx-2" onClick={handletoclear}>
+        <button className="btn btn-primary mx-2 my-1" onClick={handletoclear}>
           Clear
         </button>
-        <button className="btn btn-primary mx-2" onClick={handletocount}>
+        <button className="btn btn-primary mx-2 my-1" onClick={handletocount}>
           count
         </button>
       </div>
@@ -82,9 +82,9 @@ const [count, setcount] = useState(0)
       >
         <h1>your text summary</h1>
         <p>
-          {text.trim().split(" ").length} words & {text.trim().length}characters
+          {text.split(/\s+/).filter((element)=>{return element.length !==0}).length} words & {text.trim().length}characters
         </p>
-        <p>minute to read {0.008 * text.split(" ").length}</p>
+        <p>minute to read {0.008 * text.split(" ").filter((element)=>{return element.length !==0}).length}</p>
 
         <h4>preview</h4>
         <p>{text}</p>

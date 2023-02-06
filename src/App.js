@@ -66,7 +66,7 @@ setTimeout(() => {
 
 
      <BrowserRouter> 
-       <Navbar mode={mode} toggleMode={toggleMode} /> 
+       <Navbar mode={mode} title={"hello"} toggleMode={toggleMode} /> 
 
   <Alert alert={alert} />
       <div className="container my-3">
@@ -75,13 +75,13 @@ setTimeout(() => {
         
        <Route path="/textUtils"
           element={  
-          <TextForm showAlert={showAlert} heading="enter text"  mode={mode}/> 
+          <TextForm showAlert={showAlert} heading="TextUtils-word counter, character counter"  mode={mode}/> 
        
           }/> 
          
          <Route path="/Home"
           element={  
-          <TextForm showAlert={showAlert} heading="enter text"  mode={mode}/> 
+          <TextForm showAlert={showAlert} heading="TextUtils-word counter, character counter"  mode={mode}/> 
        
           }/> 
       
@@ -101,3 +101,5 @@ setTimeout(() => {
 }
 
 export default App;
+
+
